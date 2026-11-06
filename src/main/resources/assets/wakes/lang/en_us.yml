@@ -1,0 +1,82 @@
+wakes:
+    gui:
+        title: Wakes config
+        colorIntervalSlider:
+            title: Color Interval Slider
+            infoText: |
+                - [Left Click] on a section to edit its color
+                - [Left Drag] a separator to change the extend of that section
+                - [Shift + Left Click] on a section to insert a new separator
+                - [Shift + Left Click] on a separator to remove it
+            infoButton.tooltip: Show/hide info
+            resetButton.tooltip: Reset configuration
+        configButton: Mod configurations
+        colorConfigButton: Configure wake colors
+    midnightconfig:
+        title: Wakes config
+        category:
+            appearance: Appearance
+            general: General
+            debug: Debug
+
+        spawnParticles: Wake particles
+        firstPersonSplashPlane: First person splash plane
+        firstPersonSplashPlane.tooltip: Should the player's splash plane be seen while in first person?
+        wakeOpacity: Wake opacity
+        blendStrength: Blend strength
+        wakeResolution: Wake resolution
+        wakeResolution.tooltip: The pixel resolution of the wakes. Good for adjusting the wakes to better visually fit some resource packs.
+        shaderLightPassthrough: Shader light passthrough
+        shaderLightPassthrough.tooltip: Used to fine tune the appearance of wakes when using shaders. A higher value yields brighter wakes.
+        splashPlaneWidth: Width
+        splashPlaneHeight: Height
+        splashPlaneDepth: Depth
+        splashPlaneOffset: Offset
+        splashPlaneGap: Gap
+        splashPlaneResolution: Resolution
+        splashPlaneScale: Scale
+        maxSplashPlaneVelocity: Max velocity
+
+        disableMod: Disable mod
+        pickBoat: Pick boat
+        pickBoat.tooltip: Enables you to quickly grab a boat when middle clicking water. (Just like pick block)
+        boatSpawning: Boats
+        boatSpawning.tooltip: What effect should be visible when a boat moves in water?
+        playerSpawning: Player
+        playerSpawning.tooltip: What effect should be visible when you move in water?
+        otherPlayersSpawning: Other players
+        otherPlayersSpawning.tooltip: What effect should be visible when other players moves in water?
+        mobSpawning: Mobs
+        mobSpawning.tooltip: What effect should be visible when mobs moves in water?
+        itemSpawning: Items
+        itemSpawning.tooltip: What effect should be visible when an item moves in water?
+        wavePropagationFactor: Wave propagation factor
+        wavePropagationFactor.tooltip: The impact a pixels has on its neighboring pixels inside the wakes
+        waveDecayFactor: Wave decay factor
+        waveDecayFactor.tooltip: Specifies how much of a pixels value is left after each tick. (Logarithmic scale)
+        initialStrength: Initial wave strength
+        initialStrength.tooltip: The strength a source starts with to produce a wake.
+        paddleStrength: Paddle strength
+        splashStrength: Splash strength
+
+        debugColors: Render wakes with debug colors
+        drawDebugBoxes: Draw debug boxes
+        showDebugInfo: Show debug info in F3
+        floodFillDistance: Flood fill distance
+        floodFillTickDelay: Ticks until flood fill
+        renderType: Render type
+
+        enum:
+            Resolution:
+                '8': 8x8
+                '16': 16x16
+                '32': 32x32
+            EffectSpawningRule:
+                SIMULATION_AND_PLANES: Simulation & planes
+                ONLY_SIMULATION: Only simulation
+                ONLY_PLANES: Only planes
+                DISABLED: Disabled
+
+        splashPlaneDivider: Splash Plane
+        spawningRuleDivider: Effect Spawning Rules
+        wakeBehaviourDivider: Wake Behaviour
